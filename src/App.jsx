@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProductTable from "./components/ProductTable";
 import AddProduct from "./components/AddProduct";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [productName, setproductName] = useState("");
@@ -58,14 +59,7 @@ const App = () => {
   };
   return (
     <>
-      <nav
-        className="bg-success-subtle align-content-center"
-        style={{ height: "70px" }}
-      >
-        <div className="container-fluid">
-          <h3>Add Product</h3>
-        </div>
-      </nav>
+      <NavBar/>
       <section className="container-fluid my-3">
         <div className="row" style={{ height: "60dvh" }}>
           
